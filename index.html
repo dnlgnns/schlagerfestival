@@ -30,6 +30,58 @@
       text-align: left; /* Align text to the left */
       border-bottom: 1px solid #555; /* Border color for bottom of cells */
   }
+
+  a {
+      color: #fff; /* White text color for links */
+      text-decoration: none; /* No underline for links */
+  }
+
+  a:hover {
+      text-decoration: underline; /* Underline on hover for feedback */
+  }
+
+  ul {
+      list-style-type: none; /* No bullets for lists */
+      padding: 0; /* No padding for lists */
+  }
+
+  li {
+      margin-bottom: 5px; /* Small margin between list items */
+  }
+
+  h1 {
+      text-align: center; /* Center the heading */
+      margin-bottom: 20px; /* Small margin below the heading */
+  }
+
+  /* mobile styles */
+  @media (max-width: 600px) {
+      table {
+          width: 100%;
+      }
+
+      th, td {
+          display: block;
+          padding: 10px;
+      }
+
+      tr {
+          margin-bottom: 10px;
+      }
+
+      th {
+          background-color: #222;
+          color: #fff;
+      }
+
+      tr:nth-child(even) {
+          background-color: #444;
+      }
+
+      tr:hover {
+          background-color: #555;
+      }
+  }
 </style>
 
 <h1>Schlagerfestival</h1>
