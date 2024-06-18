@@ -1,22 +1,35 @@
 <style>
     table {
-        width: 100%;
-        border-collapse: collapse;
-    }
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333; /* Dark background for the table */
+    color: #ddd; /* Light text color for contrast */
+  }
 
-    tr {
-        background-color: #f2f2f2;
-    }
+  table, th, td {
+      border: 1px solid #444; /* Slightly lighter border for visibility */
+  }
 
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
+  tr:nth-child(even) {
+      background-color: #444; /* Even darker background for even rows */
+  }
 
-    td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
+  tr:hover {
+      background-color: #555; /* Slightly lighter on hover for feedback */
+  }
+
+  th {
+      background-color: #222; /* Even darker background for headers */
+      color: #fff; /* White text for headers */
+      padding: 12px; /* More padding for header */
+      text-align: left; /* Align text to the left */
+  }
+
+  td {
+      padding: 10px; /* Comfortable padding for data cells */
+      text-align: left; /* Align text to the left */
+      border-bottom: 1px solid #555; /* Border color for bottom of cells */
+  }
 </style>
 
 <h1>Schlagerfestival</h1>
@@ -72,6 +85,7 @@
   </tr>
   <tr>
     <td>Wolves in the Throne Room</td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
