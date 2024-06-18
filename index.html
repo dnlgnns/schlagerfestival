@@ -1,87 +1,59 @@
 <style>
-  table {
-    font-size: 16px; /* Normal font size for the table */
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #333; /* Dark background for the table */
-    color: #ddd; /* Light text color for contrast */
-  }
-
-  table, th, td {
-      border: 1px solid #444; /* Slightly lighter border for visibility */
-  }
-
-  tr:nth-child(even) {
-      background-color: #444; /* Even darker background for even rows */
-  }
-
-  tr:hover {
-      background-color: #555; /* Slightly lighter on hover for feedback */
-  }
-
-  th {
-      background-color: #222; /* Even darker background for headers */
-      color: #fff; /* White text for headers */
-      padding: 12px; /* More padding for header */
-      text-align: left; /* Align text to the left */
-  }
-
-  td {
-      padding: 10px; /* Comfortable padding for data cells */
-      text-align: left; /* Align text to the left */
-      border-bottom: 1px solid #555; /* Border color for bottom of cells */
-  }
-
-  a {
-      color: #fff; /* White text color for links */
-      text-decoration: none; /* No underline for links */
-  }
-
-  a:hover {
-      text-decoration: underline; /* Underline on hover for feedback */
-  }
-
-  ul {
-      list-style-type: none; /* No bullets for lists */
-      padding: 0; /* No padding for lists */
-  }
-
-  li {
-      margin-bottom: 5px; /* Small margin between list items */
-  }
-
   h1 {
-      text-align: center; /* Center the heading */
-      margin-bottom: 20px; /* Small margin below the heading */
-  }
-
-  /* mobile styles. way bigger font-size */
-  @media (max-width: 600px) {
-    table {
-      font-size: 26px;
-    }
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
   }
 
   .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin: 1em;
   }
 
   .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
 
   .card h2 {
-    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .card p {
+    margin-bottom: 1em;
+  }
+
+  .card h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
   }
 
   .card ul {
-    list-style-type: none;
-    padding-left: 0;
+    margin-bottom: 1em;
+  }
+
+  .card ul li {
+    margin-bottom: 0.5em;
+  }
+
+  .card a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .cards-container {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -295,255 +267,3 @@
     </ul>
   </div>
 </div>
-
-<table>
-  <tr>
-    <th>Band</th>
-    <th>Beschreibung</th>
-    <th>Alben</th>
-    <th>Links</th>
-  <tr>
-    <td>Opeth</td>
-    <td>Naja, nicht viel hinzuzufügen. Einfach eine der besten Bands der Welt. Progressive Death Metal aus Schweden. </td>
-    <td>
-        <ul>
-            <li>Blackwater Park</li>
-            <li>Damnation</li>
-            <li>Ghost Reveries</li>
-        </ul>
-    </td>
-    <td>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=bSpqLqC7U6g">Opeth - Windowpane</a></li>
-            <li><a href="https://www.youtube.com/watch?v=p3SXIWS7rBQ">Opeth - Ghost of Perdition</a></li>
-            <li><a href="https://www.youtube.com/watch?v=LhqijfqecvA">Opeth - Sorceress</a></li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Steven Wilson</td>
-    <td>Genialer Musiker. Ehemaliger Frontamann von Porcupine Tree. War dazu der Produzent von einigen von Opeths besten Alben - Blackwater Park, Damnation, Deliverence und Heritage. </td>
-    <td>
-      <ul>
-        <li>Hand. Cannot. Erase.</li>
-        <li>The Raven That Refused to Sing</li>
-      </ul>
-    </td>
-    <td>
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=ycYewhiaVBk">Steven Wilson - Drive Home</a></li>
-          <li><a href="https://www.youtube.com/watch?v=IVC8Vtev3-Q">Steven Wilson - Luminol</a></li>
-          <li><a href="https://www.youtube.com/watch?v=UroVey4fJ_g">Steven Wilson - Self</a></li>
-          <li><a href="https://www.youtube.com/watch?v=sh5mWzKlhQY">Steven Wilson - Routine</a></li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Porcupine Tree</td>
-    <td>Progressive Rock Band aus England. Steven Wilsons Hauptprojekt.</td>
-    <td>
-      <ul>
-        <li>In Absentia</li>
-        <li>Deadwing</li>
-        <li>The Sky Moves Sideways</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=Nfql0PyA8D0">Porcupine Tree - Blackest Eyes</a></li>
-        <li><a href="https://www.youtube.com/watch?v=0UHwkfhwjsk">Porcupine Tree - Trains</a></li>
-        <li><a href="https://www.youtube.com/watch?v=Kpeip2B8l2E">Porcupine Tree - Arriving Somewhere But Not Here</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Storm Corrosion</td>
-    <td>Noch ein Projekt von Steven Wilson und Mickael Ackerfeld.</td>
-    <td>
-      <ul>
-        <li>Storm Corrosion</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=manW5v-AR7U">Storm Corrosion - Drag Ropes</a></li>
-      </ul> 
-    </td>
-  </tr>
-  <tr>
-    <td>Regarde les Hommes Tomber</td>
-    <td>Post-black metal aus Nantes, Frankreich.</td>
-    <td>
-      <ul>
-        <li>Regarde les Hommes Tomber</li>
-        <li>Exile</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=S0ZF9JJqxF8">Regarde les hommes tomber - Philharmonie de Paris</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Wolves in the Throne Room</td>
-    <td>Atmospheric Black Metal aus Olympia, Washington.</td>
-    <td>
-      <ul>
-        <li>Two Hunters</li>
-        <li>Black Cascade</li>
-        <li>Celestial Lineage</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Killing Joke</td>
-    <td>Post-Punk Band aus England.</td>
-    <td>
-      <ul>
-        <li>Killing Joke</li>
-        <li>Killing Joke (2003)</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>La Fraction</td>
-    <td>Post-Punk Band aus Frankreich.</td>
-    <td>
-      <ul>
-        <li>La Fraction</li>
-        <li>La Vie Revee</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Primus</td>
-    <td>Progressive Rock Band aus Kalifornien.</td>
-    <td>
-      <ul>
-        <li>Sailing the Seas of Cheese</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Heilung</td>
-    <td>Neo-Folk Band aus Kopenhagen.</td>
-    <td>
-      <ul>
-        <li>Ofnir</li>
-        <li>Lifa</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=64CACoHNBEI">Heilung - Norupo</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Fleshgod Apocalypse</td>
-    <td>Technical Death Metal Band aus Rom.</td>
-    <td>
-      <ul>
-        <li>Agony</li>
-        <li>Labyrinth</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li><a href="">Fleshgod Apocalypse - The Fool</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Carach Angren</td>
-    <td>Symphonic Black Metal Band aus den Niederlanden.</td>
-    <td>
-      <ul>
-        <li>Dance and Laugh Amongst the Rotten</li>
-        <li>This is No Fairytale</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Ahab</td>
-    <td>Funeral Doom Metal Band aus Deutschland.</td>
-    <td>
-      <ul>
-        <li>The Giant</li>
-        <li>The Boats of the "Glen Carrig" </li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Animals as Leaders</td>
-    <td>Instrumental Progressive Metal Band aus Washington D.C.</td>
-    <td>
-      <ul>
-        <li>Animals as Leaders</li>
-        <li>The Joy of Motion</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Polyphia</td>
-    <td>Instrumental Progressive Metal Band aus Texas.</td>
-    <td>
-      <ul>
-        <li>Muse</li>
-        <li>Renaissance</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>But alive..</td>
-    <td>Deutschsprachige Punk Band aus Hamburg.</td>
-    <td>
-      <ul>
-        <li>Bis Jetzt Ging Alles Gut</li>
-        <li>Hallo Endorphin</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Sublime</td>
-    <td>Reggae Punk Band aus Long Beach, Kalifornien.</td>
-    <td>
-      <ul>
-        <li>40oz. to Freedom</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Toe</td>
-    <td>Instrumental Math Rock Band aus Tokio.</td>
-    <td>
-      <ul>
-        <li>The Book About My Idle Plot on a Vague Anxiety</li>
-        <li>For Long Tomorrow</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Gentle Giant</td>
-    <td>Progressive Rock Band aus England.</td>
-    <td>
-      <ul>
-        <li>Octopus</li>
-        <li>Free Hand</li>
-      </ul>
-    </td>
-    <td></td>
-  </tr>
-</table>
