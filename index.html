@@ -1,72 +1,61 @@
 <style>
-  h1 {
-  text-align: center;
-  font-size: 2em;
-  margin-top: 1em;
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
-  margin: 1em;
-}
-
-.card {
-  background-color: #f9f9f9;
-  padding: 0; /* Adjusted to remove padding from the card itself */
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more modern look */
-  overflow: hidden; /* Ensures that the header bar's border-radius is applied */
-}
-
-.card-header {
-  background-color: #333; /* Dark background for the header */
-  color: #fff; /* Light text for contrast */
-  padding: 1em;
-  border-radius: 5px 5px 0 0; /* Rounded corners at the top */
-}
-
-.card-content {
-  padding: 1em; /* Moved padding from .card to .card-content */
-}
-
-.card h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-.card p {
-  margin-bottom: 1em;
-}
-
-.card h3 {
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-.card ul {
-  margin-bottom: 1em;
-}
-
-.card ul li {
-  margin-bottom: 0.5em;
-}
-
-.card a {
-  color: #007bff; /* Brighter color for links */
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .cards-container {
-    grid-template-columns: 1fr;
+  body {
+    background-color: #121212; /* Dark background for the body */
+    color: #e0e0e0; /* Light text color for contrast */
+    font-family: Arial, sans-serif; /* Modern font */
   }
-}
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    color: #fff; /* Ensure the heading is also light-colored */
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin: 1em;
+  }
+
+  .card {
+    background-color: #1e1e1e; /* Darker shade for cards */
+    padding: 1em; /* Add padding around the entire card */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Slightly darker shadow for depth */
+    overflow: hidden;
+  }
+
+  .card-header {
+    background-color: #333; /* Slightly lighter than card background for contrast */
+    color: #fff;
+    padding: 0.5em 1em; /* Adjusted padding for the header */
+    border-radius: 5px 5px 0 0;
+  }
+
+  .card-content {
+    padding: 1em; /* Ensure content within the card is also padded */
+  }
+
+  .card h2, .card h3, .card p, .card ul, .card a {
+    color: #e0e0e0; /* Light text color for readability */
+  }
+
+  .card a {
+    color: #4f8cff; /* Bright color for links to stand out */
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .cards-container {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <h1>Schlagerfestival</h1>
